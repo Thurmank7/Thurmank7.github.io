@@ -1,40 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Gunnar Henderson Fan Page</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffe5b4; /* creamsicle orange */
+      color: #222;
+    }
+
+    .main-header {
+      background-color: #fff;
+      padding: 20px 0;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .gunnar-face {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .title-text h1 {
+      font-size: 2.8rem;
+      margin: 0;
+      color: #000;
+      text-align: center;
+    }
+
+    .orange-bar {
+      height: 10px;
+      background-color: #fb4f14;
+      margin-top: 10px;
+    }
+
+    .homepage-sections {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 20px;
+      flex-wrap: wrap;
+    }
+
+    .section-box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 280px;
+      text-align: center;
+    }
+
+    .cover-img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #fb4f14;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #d93f0d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      background-color: #fff;
+      border-top: 1px solid #ddd;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Header with title and image -->
   <header class="main-header">
     <div class="header-container">
-      <img src="gunnar-face.jpg" alt="Gunnar Henderson" class="gunnar-face">
+      <img src="Pictures/current.jpg" alt="Gunnar Henderson Left" class="gunnar-face" />
+
       <div class="title-text">
-        <h1>Gunnar Henderson Fan Page</h1>
+        <h1>Gunnar Henderson Fan Page</h1> 
       </div>
+
+      <img src="Pictures/current.jpg" alt="Gunnar Henderson Right" class="gunnar-face" />
     </div>
     <div class="orange-bar"></div>
   </header>
 
-  <!-- Main sections laid out horizontally -->
+  <!-- Main 3-section layout -->
   <main class="homepage-sections">
     <section class="section-box">
+      <img src="Pictures/6552cb303b4816.28094037.jpg" alt="Highlights Cover" class="cover-img" />
       <h2>Highlights</h2>
-      <p>Check out his best moments and jaw-dropping plays.</p>
-      <a href="highlights.html" class="btn">Watch Now</a>
+      <p>BEST highlight reel of 2024??!?!? you decide after watching, 99% WILL agree</p>
+      <a href="highlights.html" class="btn">Watch Highlights</a>
     </section>
 
     <section class="section-box">
-      <h2>Why He's the GOAT</h2>
-      <p>Read the reasons why Gunnar is on track to be a legend.</p>
-      <a href="goat.html" class="btn">Learn More</a>
+      <img src="Pictures/01jqw49r8nnjhrjn34jd.jpg" alt="GOAT Cover" class="cover-img" />
+      <h2>Already the GOAT?!!?</h2>
+      <p>Click link below to find out SHOCKING info about what fans are already saying is baseball's best player EVER??? </p>
+      <a href="GOATTTTT.html" class="btn">Why GOAT?</a>
     </section>
 
     <section class="section-box">
-      <h2>Photo Gallery</h2>
-      <p>A collection of epic shots and memorable moments.</p>
+      <img src="Pictures/GettyImages-1660543555-3.jpg" alt="Gallery Cover" class="cover-img" />
+      <h2>Best Photos</h2>
+      <p>try not to fall in love with Gunnar after seeing these photos. 99% WILL FAIL.</p>
       <a href="gallery.html" class="btn">View Gallery</a>
     </section>
   </main>
