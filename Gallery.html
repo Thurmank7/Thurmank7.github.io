@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gunnar Henderson Photo Challenge</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8ef;
+      color: #222;
+      margin: 0;
+    }
+
+    header {
+      background-color: white;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .gunnar-face {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      color: #fb4f14;
+    }
+
+    .slideshow-container {
+      max-width: 800px;
+      margin: 40px auto;
+      position: relative;
+      text-align: center;
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .slide {
+      display: none;
+    }
+
+    .slide img {
+      width: 100%;
+      border-radius: 8px;
+      max-height: 500px;
+      object-fit: cover;
+    }
+
+    .difficulty {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fb4f14;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      background-color: #fb4f14;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px;
+      border: none;
+      font-weight: bold;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: #d93f0d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Pictures/current.jpg" alt="Gunnar Left" class="gunnar-face" />
+    <h1>Try Not to Fall in Love with Gunnar Henderson</h1>
+    <img src="Pictures/current.jpg" alt="Gunnar Right" class="gunnar-face" />
+  </header>
+
+  <div class="slideshow-container">
+    <div class="slide">
+      <img src="Pictures/original.jpg" alt="Photo 1">
+      <div class="difficulty">
+        <button class="prev" onclick="plusSlides(-1)">Previous</button>
+        Difficulty: 10% Easy level very few have failed 99% still remain
+        <button class="next" onclick="plusSlides(1)">Next</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="Pictures/gettyimages-2164846085-1000x563.jpg" alt="Photo 2">
+      <div class="difficulty">
+        <button class="prev" onclick="plusSlides(-1)">Previous</button>
+        Difficulty: 20%- Still easy 90% remain
+        <button class="next" onclick="plusSlides(1)">Next</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="Pictures/gunnar-henderson-slide-orioles.jpg" alt="Photo 3">
+      <div class="difficulty">
+        <button class="prev" onclick="plusSlides(-1)">Previous</button>
+        Difficulty: 30% Still on the easy side, after this its next to impossible 85% remain
+        <button class="next" onclick="plusSlides(1)">Next</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="Pictures/gunnar-henderson.jpg" alt="Photo 4">
+      <div class="difficulty">
+        <button class="prev" onclick="plusSlides(-1)">Previous</button>
+        Difficulty: 40%-around 40-50% have failed 5 million remaining
+        <button class="next" onclick="plusSlides(1)">Next</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="Pictures/Gunnar-Henderson-2.jpg" alt="Photo 5">
+      <div class="difficulty">
+        <button class="prev" onclick="plusSlides(-1)">Previous</button>
+        Difficulty: 50%- 1/10 of contestents have made it this far 1mil remaining
+        <button class="next" onclick="plusSlides(1)">Next</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="Pictures/m4rv9zsqlymoagnxix5a.jpg" alt="Photo 6">
+      <div class="difficulty">
+        <button class="prev" onclick="plusSlides(-1)">Previous</button>
+        Difficulty: 60% 99% Most have failed 100k remaining
+        <button class="next" onclick="plusSlides(1)">Next</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="Pictures/0x0.jpg" alt="Photo 7">
+      <div class="difficulty">
+        <button class="prev" onclick="plusSlides(-1)">Previous</button>
+        Difficulty: 70% Very few remain consider yourself lucky 10k remain
+        <button class="next" onclick="plusSlides(1)">Next</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="Pictures/GettyImages-1660543555-3.jpg" alt="Photo 8">
+      <div class="difficulty">
+        <button class="prev" onclick="plusSlides(-1)">Previous</button>
+        Difficulty: 80% his smile elimates another 9,900 100 remain
+        <button class="next" onclick="plusSlides(1)">Next</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="Pictures/44c7989a150fd975657fe0d1a9ae21b2.jpg" alt="Photo 9">
+      <div class="difficulty">
+        <button class="prev" onclick="plusSlides(-1)">Previous</button>
+        Difficulty: 90% down to last few contestants 15 remain
+        <button class="next" onclick="plusSlides(1)">Next</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="Pictures/23637565-1.jpg" alt="Photo 10">
+      <div class="difficulty">
+        <button class="prev" onclick="plusSlides(-1)">Previous</button>
+        Difficulty: 100%- The last few have now failed 0 remain
+        <button class="next" onclick="plusSlides(1)">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      const slides = document.getElementsByClassName("slide");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+    }
+  </script>
+</body>
+</html>
